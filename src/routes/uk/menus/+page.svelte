@@ -452,7 +452,7 @@
 		h1 { font-size: 28px; }
 		nav { padding: 20px; }
 		.page-title { left: 20px; top: 76px; }
-		.back-link { left: 20px; }
+		.back-link { left: 20px; top: 22px; transform: none; }
 		.tree-wrapper { width: 85vh; right: -25%; bottom: -15%; }
 		.lantern-pivot { width: 9%; }
 		.lantern-label { font-size: 9px; }

@@ -250,7 +250,7 @@
 			<div class="navigation-bar">
 				<ul>
 					<li><a href="/uk/menus">Menus<span class="underline"></span></a></li>
-					<li><a href="#">Bookings<span class="underline"></span></a></li>
+					<li><a href="/uk/bookings">Bookings<span class="underline"></span></a></li>
 					<li><a href="#">Takeaway<span class="underline"></span></a></li>
 					<li><a href="#">Vouchers<span class="underline"></span></a></li>
 					<li><a href="#">Contact<span class="underline"></span></a></li>
@@ -274,10 +274,11 @@
 	<!--About Us-->
 	<div class="about-us">
 		<div class="text">
-			<h2>Discover</h2>
-			<h3>Our Story</h3>
+			<h2>Welcome to</h2>
+			<h3>Geisha Fusion</h3>
 			<div><i class="fas fa-asterisk"></i></div>
-			<p>Geisha Fusion is a unique dining experience blending Japanese tradition with modern culinary innovation. Located in the heart of the UK, we bring together the finest ingredients and techniques from East and West.</p>
+			<p>Embark on a delightful culinary journey at Geisha Fusion! Our family-friendly restaurant presents a vibrant array of dishes from across the globe.</p>
+			<p>Our diverse menu blends classic favourites with modern twists, inspired by a variety of international cuisines. Whether you're in the mood for an American-style burger, mouthwatering curry, or crispy aromatic duck, our chefs are ready to serve up the best flavours to delight your palate.</p>
 			<div><a class="a-CTA" href="#">About Us</a></div>
 		</div>
 		<div class="image-container">
@@ -298,8 +299,8 @@
 			<div class="image" style="background-image: url('/food-3.webp')"></div>
 		</div>
 		<div class="text">
-			<h2>Tasteful</h2>
-			<h3>Recipes</h3>
+			<h2>Global</h2>
+			<h3>Flavours</h3>
 		</div>
 	</div>
 
@@ -326,29 +327,29 @@
 			</div>
 		</div>
 		<div class="text">
-			<h2>Discover</h2>
+			<h2>Explore Our</h2>
 			<h3>Menu</h3>
 			<div><i class="fas fa-asterisk"></i></div>
-			<p>For those with pure food indulgence in mind, explore our ever-changing internationally and seasonally inspired dishes. We love food, lots of different food, just like you.</p>
-			<div><a class="a-CTA" href="#">View The Full Menu</a></div>
+			<p>From American-style burgers to mouthwatering curries and crispy aromatic duck — our menu is packed with global flavours to suit every taste. View our full menu and find your next favourite dish.</p>
+			<div><a class="a-CTA" href="/uk/menus">View The Full Menu</a></div>
 		</div>
 	</div>
 
 	<!--Fixed Image-->
 	<div class="fixed-image">
 		<div class="text">
-			<h2>The Perfect</h2>
-			<h3>Blend</h3>
+			<h2>A Little Bit of</h2>
+			<h3>Everywhere</h3>
 		</div>
 	</div>
 
 	<!--Reservation-->
 	<div class="reservation">
 		<div class="text">
-			<h2>Culinary</h2>
-			<h3>Delight</h3>
+			<h2>Book Your</h2>
+			<h3>Table</h3>
 			<div><i class="fas fa-asterisk"></i></div>
-			<p>We promise an intimate and relaxed dining experience that offers something different to local and foreign patrons and ensures you enjoy a memorable food experience every time.</p>
+			<p>Good food, great company, and a warm, welcoming atmosphere. Join us for a memorable dining experience the whole family will love. Tables fill up fast — book yours now!</p>
 			<div><a class="a-CTA" href="#">Make a Reservation</a></div>
 		</div>
 		<div class="image-container">
@@ -384,10 +385,10 @@
 				<p>Mon – 12pm - 10:00pm</p>
 				<p>Tues – 12pm - 10:00pm</p>
 				<p>Wed – 12pm - 10:00pm</p>
-				<p>Thur – 12pm - 11:00pm</p>
+				<p>Thur – 12pm - 10:00pm</p>
 				<p>Fri – 12pm - 11:00pm</p>
-				<p>Sat – 9am - 11:00pm</p>
-				<p>Sun – 9am - 7:30pm</p>
+				<p>Sat – 12pm - 11:00pm</p>
+				<p>Sun – 12pm - 7:30pm</p>
 			</div>
 			<div class="footer-col">
 				<h3>Essentials</h3>
@@ -726,7 +727,7 @@
 	.uk-page :global(header nav) {
 		position: fixed;
 		top: 0;
-		padding: 36px 36px 20px;
+		padding: 36px 140px 20px 36px;
 		z-index: 20;
 		background-color: #f5ede3;
 	}
@@ -915,7 +916,7 @@
 		.uk-page :global(.reservation) { display: block; padding: 30px 20px 60px; }
 	}
 	@media (max-width: 768px) {
-		.uk-page :global(header nav) { display: block; text-align: center; left: 0; top: 0; width: 100%; padding-top: 25px; }
+		.uk-page :global(header nav) { display: block; text-align: center; left: 0; top: 0; width: 100%; padding: 25px 36px 20px; }
 		.uk-page :global(header nav .toggle) { display: block; }
 		.uk-page :global(header nav .login-btn) { right: 20px; top: 22px; }
 		.uk-page :global(header .navigation-bar) {

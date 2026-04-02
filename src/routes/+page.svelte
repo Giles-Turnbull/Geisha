@@ -141,9 +141,29 @@
 			<span>Choose restaurant location</span>
 			<span class="label-line"></span>
 		</div>
-		<a href="/uk" class="location-btn {theme === 'light' ? 'active' : ''}" onmouseenter={() => theme = 'light'}>UK</a>
+		<a
+			href="/uk"
+			class="location-btn {theme === 'light' ? 'active' : ''}"
+			onmouseenter={() => { if (!window.matchMedia('(hover: none)').matches) theme = 'light'; }}
+			onclick={(e) => {
+				if (window.matchMedia('(hover: none)').matches && theme !== 'light') {
+					e.preventDefault();
+					theme = 'light';
+				}
+			}}
+		>UK</a>
 		<img class="logo" src="/geisha-logo_2.png" alt="Geisha logo" />
-		<a href="/thailand" class="location-btn {theme === 'dark' ? 'active' : ''}" onmouseenter={() => theme = 'dark'}>Thailand</a>
+		<a
+			href="/thailand"
+			class="location-btn {theme === 'dark' ? 'active' : ''}"
+			onmouseenter={() => { if (!window.matchMedia('(hover: none)').matches) theme = 'dark'; }}
+			onclick={(e) => {
+				if (window.matchMedia('(hover: none)').matches && theme !== 'dark') {
+					e.preventDefault();
+					theme = 'dark';
+				}
+			}}
+		>Thailand</a>
 	</div>
 
 
@@ -257,7 +277,9 @@
 	.choose-label {
 		position: absolute;
 		top: -2.5rem;
-		right: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		white-space: nowrap;
 		margin: 0;
 		display: flex;
 		align-items: center;
@@ -518,9 +540,39 @@
 	}
 
 	@media (max-width: 768px) {
+		@keyframes fadeInDown {
+			0% {
+				opacity: 0;
+				transform: translateX(-50%) translateY(-30px);
+			}
+			100% {
+				opacity: 1;
+				transform: translateX(-50%) translateY(0);
+			}
+		}
 		.content {
 			flex-direction: column;
-			gap: 2rem;
+			gap: 1.5rem;
+			bottom: auto;
+			top: 3rem;
+			left: 50%;
+			transform: translateX(-50%);
+			align-items: center;
+			width: calc(100vw - 6rem);
+			max-width: 360px;
+		}
+		.choose-label {
+			position: static;
+			transform: none;
+			white-space: normal;
+			width: 100%;
+			justify-content: center;
+			text-align: center;
+			font-size: 0.75rem;
+		}
+		.location-btn {
+			width: 100%;
+			text-align: center;
 		}
 		.logo {
 			width: 220px;
@@ -529,6 +581,9 @@
 			width: 70vh;
 			right: -25%;
 			bottom: -20%;
+		}
+		.bricks-right {
+			display: none;
 		}
 	}
 
